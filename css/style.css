@@ -1,4 +1,4 @@
-  
+
 :root {
   --bg-dark: #0b0c2a;
   --bg-light: #2c3e50;
@@ -68,6 +68,26 @@ body {
   transform: scale(1.2);
 }
 
+.ticker{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+gap: 2rem;            
+  background: var(--bg-dark); 
+  padding: 0.6rem 1rem;
+  border-bottom: 4px solid rgb(3, 3, 73);
+}
+
+.ticker-card {
+  display: flex;
+  gap: 0.5rem;         
+  align-items: center;
+  font-size: 14px;
+}
+
+.positive { color: #00ff88; }  
+.negative { color: #ff4d4d; } 
+
 .container {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
@@ -75,7 +95,6 @@ body {
   padding: 50px;
   align-items: start
 }
-
 .news, .qna {
   background: var(--card-bg);
   padding: 20px;
@@ -200,4 +219,46 @@ footer {
   .container {
     padding: 20px;
   }
+}
+ 
+.connecting-wallet {
+  position: fixed;   
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:var(--bg-dark);  
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.connecting-wallet.active {
+  display: flex;
+}
+
+.wallet-option {
+  background: #0d1117;  
+  border: 3px solid rgba(0, 255, 170, 0.3);  /* subtle primary color border */
+  border-radius: 1.5rem;
+  padding: 2rem;
+  width: 340px;
+}
+.wallet-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.5rem 1rem 0.5rem;
+}
+.wallet-choice {
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 0.8rem;
+  margin-bottom: 0.8rem;
+  padding: 0.8rem 1.2rem;
+}
+
+.wallet-choice:hover {
+  border-color: var(--primary);
+  background: rgba(0, 255, 170, 0.05);
 }

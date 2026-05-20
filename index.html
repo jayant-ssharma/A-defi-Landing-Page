@@ -1,67 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><title>Jay_Sol | DeFi Intelligence</title>
+  <title>Jay_Sol | DeFi Intelligence</title>  
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=close_small" />
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <script src="jss/script.js" defer ></script>
-<header>
-  <nav class="navbar">
-    <div class="logo"><img src= "img/logo2.png" alt="logo"></div>
+  <script src="jss/script.js" defer></script>
 
-    <ul class="nav-links">
-      <li>Home</li>
-      <li>Market</li>
-      <li>Docs</li>
-    </ul>
+  
+  <div class="connecting-wallet">
+    <div class="wallet-option">
+      <div class="wallet-head">
+        <h2 class="title">Connect Wallet</h2>
+        <button class="close">
+          <span class="material-symbols-outlined">close_small</span>
+        </button>
+      </div>
 
-    <div class="searchbar">
-      <input type="text" placeholder="Search...">
+      <div class="wallet-choices">
+        <div class="wallet-choice">
+          <div class="name">Phantom Wallet</div>
+          <div class="logo"><img src="img/phantom.png" alt=""></div>
+        </div>
+
+        <div class="wallet-choice">
+          <div class="name">Solfare Wallet</div>
+          <div class="logo"><img src="img/Solfare-logo.png" alt=""></div>
+        </div>
+
+        <div class="wallet-choice">
+          <div class="name">Backpack Wallet</div>
+          <div class="logo"><img src="img/Backpack-logo.png" alt="">
+          <style>
+            .logo img{
+              height: 2rem;
+            }
+          </style></div>
+        </div>
+      </div>
     </div>
-
-    <button class="wallet-btn">Connect Wallet</button>
-
-  </nav>
-</header>
-<main>
-  <div class="container">
-
-    <div class="news">
-      <h3>Recent News</h3>
-      <ul>
-        <li>🚨 US President about Solana </li>
-        <li>🌍 World War 3 Possibilities</li>
-        
-      </ul>
-    </div>
-    <section class="hero">
-      <h1>Decentralized Intelligence for the Solana Ecosystem</h1>
-      <button class="cta">Launch App 🚀</button>
-    </section>
-    <div class="qna">
-      <h3>FAQs</h3>
-      <ul>
-        <li><strong>What is Jay_Sol?</strong><br> A decentralized finance platform.</li>
-        <li><strong>How to start?</strong><br> Connect wallet & deposit tokens.</li>
-        <li><strong>Is it safe?</strong><br> Audited smart contracts.</li>
-      </ul>
-    </div>
-
   </div>
 
-  <section class="features">
-    <div class="card">⚡ Fast Transactions</div>
-    <div class="card">💰 Low Fees</div>
-    <div class="card">🔒 Secure Protocol</div>
-  </section>
+  <div class="main">
+    <header>
+      <nav class="navbar">
+        <div class="logo"><img src="img/logo2.png" alt="logo"></div>
+        <ul class="nav-links">
+          <li>Home</li>
+          <li><a href="https://jup.ag" target="_blank">Market</a>
+            
+          </li>
+          <li><a href="https://docs.solana.com" target="_blank">Docs</a></li>
+        </ul>
+        <div class="searchbar">
+          <input type="text" placeholder="Search...">
+        </div>
+        <button class="wallet-btn">Connect Wallet</button>
+      </nav>
+    </header>
 
-</main>
-<footer>
-  <p>© 2026 Jay_Sol | Built for Solana</p>
-</footer>
+    <div class="ticker">
+      <div class="ticker-card">
+        <span class="symbol">SOL</span>
+        <span id="price-SOL">---</span>
+        <span id="change-SOL">---</span>
+      </div>
+      <div class="ticker-card">
+        <span class="symbol">BTC</span>
+        <span id="price-BTC">---</span>
+        <span id="change-BTC">---</span>
+      </div>
+      <div class="ticker-card">
+        <span class="symbol">ETH</span>
+        <span id="price-ETH">---</span>
+        <span id="change-ETH">---</span>
+      </div>
+      <div class="ticker-card">
+        <span class="symbol">JUP</span>
+        <span id="price-JUP">---</span>
+        <span id="change-JUP">---</span>
+      </div>
+      <div class="ticker-card">
+        <span class="symbol">RAY</span>
+        <span id="price-RAY">---</span>
+        <span id="change-RAY">---</span>
+      </div>
+    </div>
+
+    <main>
+      <div class="container">
+        <div class="news">
+          <h3>Recent News</h3>
+          <ul>
+            <li>🚨 US President about Solana</li>
+            <li>🌍 World War 3 Possibilities</li>
+          </ul>
+        </div>
+        <section class="hero">
+          <h1>Decentralized Intelligence for the Solana Ecosystem</h1>
+          <button class="cta">Launch App 🚀</button>
+        </section>
+        <div class="qna">
+          <h3>FAQs</h3>
+          <ul>
+            <li><strong>What is Jay_Sol?</strong><br> A decentralized finance platform.</li>
+            <li><strong>How to start?</strong><br> Connect wallet & deposit tokens.</li>
+            <li><strong>Is it safe?</strong><br> Audited smart contracts.</li>
+          </ul>
+        </div>
+      </div>
+
+      <section class="features">
+        <div class="card">⚡ Fast Transactions</div>
+        <div class="card">💰 Low Fees</div>
+        <div class="card">🔒 Secure Protocol</div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 Jay_Sol | Built for Solana</p>
+    </footer>
+  </div>
+<li><a href="https://jup.ag" target="_blank">Market</a></li>
+<li><a href="https://docs.solana.com" target="_blank">Docs</a></li>
 </body>
 </html>
