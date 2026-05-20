@@ -203,7 +203,9 @@ footer {
     flex-wrap: wrap;
     gap: 10px;
   }
-
+.ticker{
+  flex-wrap:wrap;
+}
   .searchbar input {
     width: 100%;
   }
