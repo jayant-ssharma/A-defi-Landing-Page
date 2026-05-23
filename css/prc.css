@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* ---- MOBILE FIRST (default styles = mobile) ---- */
+.navbar {
+    display: flex;
+    flex-direction: column;    /* stacked on mobile */
+    align-items: flex-start;
+    gap: 12px;
+    padding: 16px;
+    background-color: #0f0f0f;
+    color: white;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #a78bfa;
+}
+
+.nav-links {
+    padding-top: 0.7rem;
+    display: flex;
+    flex-direction: column;    /* links stacked on mobile */
+    list-style: none;
+    gap: 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+nav .btn {
+    padding-top: 2rem;
+    width: 100%;               /* full width on mobile */
+    padding: 8px 20px;
+    background-color: #a78bfa;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* ---- TABLET (600px and above) ---- */
+@media (min-width: 600px) {
+    .nav-links {
+        flex-direction: row;   /* links go horizontal */
+        gap: 16px;
+    }
+
+    .btn {
+        width: auto;           /* button shrinks back */
+    }
+}
+
+
+/* ---- DESKTOP (1024px and above) ---- */
+@media (min-width: 1024px) {
+    .navbar {
+        flex-direction: row; 
+        justify-content: center;       /* whole navbar horizontal */
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 40px;
+    }
+
+    .nav-links {
+        gap: 32px;
+    }
+}

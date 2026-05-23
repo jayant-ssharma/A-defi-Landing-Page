@@ -1,28 +1,47 @@
-# Jay_Sol — DeFi Intelligence Platform
+# ⚡ Jay_Sol — DeFi Intelligence
 
-A Solana-focused DeFi landing page with real-time news, 
-FAQs, and wallet connect UI.
+🔗 [Live Demo](https://a-defi-landing-page.vercel.app/)
 
-## Pages / Sections
-- Hero — tagline + Launch App CTA
-- Recent News — live Solana ecosystem updates
-- FAQs — quick onboarding answers
-- Features — fast, cheap, secure highlights
-
-## Built With
-- HTML, CSS, JavaScript
-- CSS Grid + Flexbox layout
-- Glassmorphism UI (backdrop-filter)
-- Fully responsive (mobile + tablet)
-
-## What I Learned
-- CSS Grid 3-column layout
-- CSS variables and theming
-- Glassmorphism design
-- Responsive design with media queries
-- Web3 UI/UX patterns
+---
 
 ## Preview
-![Jay_Sol Preview](img/logo2.png)
 
----.
+![Desktop](/screenshot/desktop.png)
+![Mobile](/screenshot/mobile.png)
+
+---
+
+## What It Does
+A DeFi landing page concept for the Solana ecosystem featuring live crypto prices,
+a simulated wallet connection UI, and platform information.
+
+---
+
+## Features
+- 🔗 Simulated wallet connect modal (Phantom, Solflare, Backpack) — UI only
+- 📈 Live SOL, BTC, ETH, JUP, RAY price ticker via API
+- 🚀 Hero section with Launch App CTA
+- 📰 Recent News section
+- ❓ FAQ section
+- 📱 Fully responsive design
+
+---
+
+## Tech Used
+- HTML · CSS · JavaScript
+
+---
+
+## What I Learned
+- Designing a production-style DeFi UI from scratch
+- Fetching and displaying live crypto price data
+- Building modular UI components like wallet modals and price tickers
+
+---
+
+## How to Run Locally
+```bash
+git clone https://github.com/jayant-ssharma/a-defi-landing-page.git
+cd a-defi-landing-page
+open index.html
+```
